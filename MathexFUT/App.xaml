@@ -5,9 +5,51 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 		<Style x:Key="w" TargetType="Window">
-			<Setter Property="Background" Value="Cornflowerblue"/>
+			<Setter Property="Background" Value="#6495ed"/>
 			<Setter Property="Height" Value="800"/>
 			<Setter Property="Width" Value="1200"/>
+		</Style>
+		<Style x:Key="btn" TargetType="Button">
+			<Setter Property="Background" Value="#2b70ed"/>
+			<Setter Property="Foreground" Value="#000000"/>
+			<Setter Property="Height" Value="40"/>
+			<Setter Property="Width" Value="120"/>
+			<Setter Property="BorderBrush" Value="#2b70ed"/>
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="FontFamily" Value="Arial"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Border BorderThickness="2" CornerRadius="15"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                Background="{TemplateBinding Background}">
+							<TextBlock Text="{TemplateBinding Content}"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"/>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+			<Style.Triggers>
+				<Trigger Property="IsMouseOver" Value="True">
+					<Setter Property="Background" Value="#5188ed"/>
+					<Setter Property="Foreground" Value="#000000"/>
+					<Setter Property="BorderBrush" Value="#5188ed"/>
+				</Trigger>
+				<Trigger Property="IsPressed" Value="True">
+					<Setter Property="Background" Value="#5188ed"/>
+					<Setter Property="Foreground" Value="#000000"/>
+					<Setter Property="BorderBrush" Value="#5188ed"/>
+				</Trigger>
+				<Trigger Property="IsEnabled" Value="False">
+					<Setter Property="Background" Value="#2b70ed"/>
+					<Setter Property="Foreground" Value="#000000"/>
+					<Setter Property="BorderBrush" Value="#2b70ed"/>
+				</Trigger>
+			</Style.Triggers>
+		</Style>
+		<Style x:Key="errorTB" TargetType="TextBlock">
+			<Setter Property="Background" Value="#000000ff"/>
 		</Style>
     </Application.Resources>
 </Application>

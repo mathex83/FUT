@@ -11,5 +11,10 @@ namespace MathexFUT
 		{
 			InitializeComponent();
 		}
+
+		private void ExitClick(object sender, RoutedEventArgs e)
+		{
+			Application.Current.Shutdown();
+		}
 	}
 }

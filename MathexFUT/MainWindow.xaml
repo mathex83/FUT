@@ -6,6 +6,16 @@
         xmlns:local="clr-namespace:MathexFUT"
         mc:Ignorable="d" Style="{StaticResource w}" WindowStartupLocation="CenterScreen">
     <Grid>
-
-    </Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Button Content="Exit" Grid.Column="2" Grid.Row="2" Style="{StaticResource btn}" Click="ExitClick"/>
+	</Grid>
 </Window>
