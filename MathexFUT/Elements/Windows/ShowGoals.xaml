@@ -1,0 +1,82 @@
+﻿<Window x:Class="MathexFUT.Elements.Windows.ShowGoals"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Style="{StaticResource w}" WindowStartupLocation="CenterScreen">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="4*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+
+		<Button Content="Squad Battles" Grid.Row="0" Style="{StaticResource menuBtn1}" Click="TopMenuClick"/>
+		<Button Content="Venskabskampe" Grid.Row="3" Style="{StaticResource menuBtn1}" Click="TopMenuClick"/>
+		<Button Content="Venskabskampe online" Grid.Row="6" Style="{StaticResource menuBtn1}" Click="TopMenuClick"/>
+		<Button Content="Division Rivals" Grid.Row="9" Style="{StaticResource menuBtn1}" Click="TopMenuClick"/>
+		<Button Content="Weekend League" Grid.Row="12" Style="{StaticResource menuBtn1}" Click="TopMenuClick"/>
+
+		<!--Alle Stackpanels bliver sat Visibility=Hidden ved window load-->
+		<StackPanel x:Name="sb" Grid.Column="1" Grid.RowSpan="15" VerticalAlignment="Center">
+			<Button Content="Begynder" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Amatør" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Semi-Pro" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Professionel" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Verdensklasse" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Legendarisk" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Ultimativ" Style="{StaticResource menuBtn2}"/>
+		</StackPanel>
+
+		<StackPanel x:Name="f" Grid.Column="1" Grid.RowSpan="15" VerticalAlignment="Center">
+			<Button Content="Mystisk bold" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Ingen regler" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Klassisk kamp" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Hold på bolden" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Venskab" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Venskab" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Venskab" Style="{StaticResource menuBtn2}"/>
+		</StackPanel>
+
+		<StackPanel x:Name="of" Grid.Column="1" Grid.RowSpan="15" VerticalAlignment="Center">
+			<Button Content="Sølvloungen" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Mesterlig ledelse" Style="{StaticResource menuBtn2}"/>
+			<Button Content="What if" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Én liga" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Ét land" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Mystisk bold" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Hold på bolden" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Klassisk kamp" Style="{StaticResource menuBtn2}"/>
+			<Button Content="Ingen regler" Style="{StaticResource menuBtn2}"/>
+		</StackPanel>
+
+		<StackPanel x:Name="r" Grid.Column="1" Grid.RowSpan="15" VerticalAlignment="Center">
+			<Button Content="Division Rivals" Style="{StaticResource menuBtn2}"/>
+		</StackPanel>
+
+		<StackPanel x:Name="wl" Grid.Column="1" Grid.RowSpan="15" VerticalAlignment="Center">
+			<Button Content="Weekend League" Style="{StaticResource menuBtn2}"/>
+		</StackPanel>
+
+
+		<Button Content="Close" Grid.Column="2" Grid.Row="15" Style="{StaticResource btn}" HorizontalAlignment="Right" Click="CloseClick"/>
+	</Grid>
+</Window>
